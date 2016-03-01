@@ -18,6 +18,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+gem 'devise', :github => 'plataformatec/devise', :branch => 'master'
 # Use Puma as the app server
 gem 'puma'
 
