@@ -11,5 +11,7 @@ module Chatapp
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.autoload_paths += %W(#{config.root}/lib)
+    ActionCable.server.config.allowed_request_origins = ['http://f803bbf9.ngrok.io', '127.0.0.1']
   end
 end

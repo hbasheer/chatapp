@@ -14,6 +14,7 @@ App.room = App.cable.subscriptions.create "RoomChannel",
 
 $(document).on 'keypress', '[data-behavior~=room-speaker]', (event) ->
   if event.keyCode is 13
+    gifURL = "/fetch_gif?message=" + event.target.value
     App.room.speak event.target.value
-    even.target.value = ''
+    event.target.value = ''
     event.preventDefault()
